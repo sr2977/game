@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('main.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#story {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#mascot-container {
+    position: relative;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#mascot {
+    max-width: 100%;
+    height: auto; /* Maintain the aspect ratio of the mascot image */
+    max-height: 150px; /* Adjust the max height as needed */
+    border-radius: 50%; /* Optional: Add a border-radius for a circular mascot image */
+    position: absolute;
+    animation: moveMascot 5s linear infinite alternate; /* Customize the animation duration and properties as needed */
+}
+
+@keyframes moveMascot {
+    from {
+        left: 0;
+    }
+    to {
+        left: 80%; /* Adjust the distance the mascot moves to the right */
+    }
+}
+
+/* Add this code at the end of your existing CSS file */
+
+/* Add this code at the end of your existing CSS file */
+
+#audio-container {
+    display: none;
+}
